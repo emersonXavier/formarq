@@ -5,7 +5,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-void invert(FILE* Arquivo)      // Convers„o INVERT
+void invert(FILE* Arquivo)      // Convers√£o INVERT
 {
      char c;
      do{
@@ -16,7 +16,7 @@ void invert(FILE* Arquivo)      // Convers„o INVERT
      return;
 }
 
-void cript(FILE* Arquivo, char Chave[])   // Convers„o CRIPT
+void cript(FILE* Arquivo, char Chave[])   // Convers√£o CRIPT
 {
      char c;
      do{
@@ -27,7 +27,7 @@ void cript(FILE* Arquivo, char Chave[])   // Convers„o CRIPT
      return;
 }
 
-void u2d(FILE* Arquivo)                // Convers„o UNIX to DOS
+void u2d(FILE* Arquivo)                // Convers√£o UNIX to DOS
 {
      char c;
      do{
@@ -38,7 +38,7 @@ void u2d(FILE* Arquivo)                // Convers„o UNIX to DOS
      return;
 }
 
-void d2u(FILE* Arquivo)               // Convers„o DOS to UNIX
+void d2u(FILE* Arquivo)               // Convers√£o DOS to UNIX
 {
      char c;
      do{
@@ -51,13 +51,13 @@ void d2u(FILE* Arquivo)               // Convers„o DOS to UNIX
 
 int main()
 {
-    char Nome, Tipo, Chave[8];               //chave que vai dizer qual conversao sera usada / se C, Chav È a Senha
+    char Nome, Tipo, Chave[8];               //chave que vai dizer qual conversao sera usada / se C, Chav √© a Senha
     FILE *Arquivo;                           // Declara o ARQUIVO
     printf("\n\tFORMARQ <dados.DAT> [I][C][D][U]\n\nI: ConversAo Invert.\nC: ConversAo Cript. [escrever chave]\nD: ConversAo UNIX to DOS.\nU: ConversAo DOS to UNIX.\n");
     Arquivo = fopen("DADOS.dat", "r");       // Abre ARQUIVO
-    scanf("%c", &Tipo);                      // Recebe a convers„o
-    if(Tipo=='c') scanf(" %s", &Chave);      // Recebe a Chave, se a convers„o for Cript
-    switch(Tipo){                            // Define, partindo da letra, qual convers„o ser· usada
+    scanf("%c", &Tipo);                      // Recebe a convers√£o
+    if(Tipo=='c') scanf(" %s", &Chave);      // Recebe a Chave, se a convers√£o for Cript
+    switch(Tipo){                            // Define, partindo da letra, qual convers√£o ser√° usada
                  case'i': invert(Arquivo); break;
                  case'c': cript(Arquivo, Chave[8]); break;
                  case'd': u2d(Arquivo); break;
