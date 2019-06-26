@@ -12,23 +12,23 @@ CRIPT
   Conteúdo do arquivo de entrada: BOM DIA, PESSOAL.
   Chave: GAVETA.
   Arquivo de saída:
-  ‘B’ ^ ‘G’,
-  ‘O’ ^ ‘A’,
-  ‘M’ ^ ‘V’,
-  ‘ ‘ ^ ‘E’,
-  ‘D’ ^ ‘T’,
-  ‘I’ ^ ‘A’,
-  ‘A’ ^ ‘G’,
-  ‘,’ ^ ‘A’,
-  ‘ ‘ ^ ‘V’,
-  ‘P’ ^ ‘E’,
-  ‘E’ ^ ‘T’,
-  ‘S’ ^ ‘A’,
-  ‘S’ ^ ‘G’,
-  ‘O’ ^ ‘A’,
-  ‘A’ ^ ‘V’,
-  ‘L’ ^ ‘E’,
-  ‘.’ ^ ‘T’.
+  ‘B’ ^ ‘G’;
+  ‘O’ ^ ‘A’;
+  ‘M’ ^ ‘V’;
+  ‘ ‘ ^ ‘E’;
+  ‘D’ ^ ‘T’;
+  ‘I’ ^ ‘A’;
+  ‘A’ ^ ‘G’;
+  ‘,’ ^ ‘A’;
+  ‘ ‘ ^ ‘V’;
+  ‘P’ ^ ‘E’;
+  ‘E’ ^ ‘T’;
+  ‘S’ ^ ‘A’;
+  ‘S’ ^ ‘G’;
+  ‘O’ ^ ‘A’;
+  ‘A’ ^ ‘V’;
+  ‘L’ ^ ‘E’;
+  ‘.’ ^ ‘T’;
 
   O caminho de volta é simples: o usuário fornece a chave e as mesmas operações são feitas, fazendo com que o arquivo original seja recuperado.
 
@@ -66,6 +66,6 @@ Todas essas características devem ser checadas antes de proceder qualquer conve
 
 O usuário deve escolher um único tipo de conversão, caso contrário, cancelar o programa, notificando o usuário com mensagens. Além disso, o tipo de conversão escolhido deve estar entre os citados. Ex.:
 
-FORMARQ    dados.DAT    G
+$ FORMARQ    dados.DAT    G
 
 O tipo de conversão G não existe, portanto, o programa deve ser cancelado.
